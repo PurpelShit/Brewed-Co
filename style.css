@@ -942,9 +942,9 @@ section {
 }
 
 .promo-bean-right {
-    right: 0;
-    top: -20px;
-    width: 180px;
+    right: -20px;
+    top: -40px;
+    width: 360px;
 }
 
 @media(max-width: 767px) {
