@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Brewed & Co. | Every cup tells a story</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Max width 1440px Wrapper -->
+    <div class="app-wrapper">
+        
+        <!-- 1. URGENCY BANNER -->
+        <div id="urgency-banner">
+            <div class="urgency-content">
+                <span class="urgency-text">🎉 FREE delivery on orders above BD 3.000 — Today Only!</span>
+                <button class="urgency-close" aria-label="Close banner">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. STICKY NAVIGATION BAR -->
+        <header id="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo text-nowrap">Brewed &amp; Co.</a>
+                
+                <nav class="nav-links desktop-only">
+                    <div class="nav-dropdown">
+                        <button class="nav-more-btn" aria-label="More options">
+                            More 
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </button>
+                        <div class="nav-dropdown-content">
+                            <a href="#hero">HOME</a>
+                            <a href="#coffee-menu">COFFEE</a>
+                            <a href="#desserts">BAKERY</a>
+                            <a href="#promo-banner">SHOP</a>
+                            <a href="#footer" class="footer-toast-link">ABOUT</a>
+                            <a href="#hero">LOGIN</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="search-btn" aria-label="Search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                    <a href="#coffee-menu" class="btn-primary desktop-only">Order Now</a>
+                    <button class="mobile-menu-toggle mobile-only" aria-label="Toggle menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay">
+                <button class="mobile-menu-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+                <nav class="mobile-nav-links">
+                    <a href="#hero">HOME</a>
+                    <a href="#coffee-menu">COFFEE</a>
+                    <a href="#desserts">BAKERY</a>
+                    <a href="#promo-banner">SHOP</a>
+                    <a href="#footer">ABOUT</a>
+                    <a href="#hero">LOGIN</a>
+                    <a href="#coffee-menu" class="btn-primary mobile-order-btn">Order Now</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 3. HERO SECTION -->
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-label">Welcome!</span>
+                    <h1 class="hero-title">We Serve the Richest Coffee in the City!</h1>
+                    <p class="hero-subtext">Handcrafted with passion. Sourced from the finest estates. Ready in minutes.</p>
+                    <div class="hero-actions">
+                        <a href="#coffee-menu" class="btn-primary hero-btn" style="opacity: 1 !important; visibility: visible !important;">Order Now</a>
+                        <a href="#coffee-menu" class="btn-secondary hero-link">View Menu &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CATEGORY ICONS ROW -->
+        <section id="categories">
+            <div class="category-wrapper">
+                <!-- Hot Coffee -->
+                <a href="#coffee-menu" class="category-item">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                        <path d="M8 20h36v24a8 8 0 01-8 8H16a8 8 0 01-8-8V20z"/>
+                        <path d="M44 26h4a8 8 0 010 16h-4"/>
+                        <path d="M16 6 c0 0 2-3 0-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        <path d="M24 6 c0 0 2-3 0-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        <path d="M32 6 c0 0 2-3 0-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    </svg>
+                    <span class="cat-label">Hot Coffee</span>
+                </a>
+
+                <!-- Cold Coffee -->
+                <a href="#coffee-menu" class="category-item">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                        <path d="M14 10 l4 46h28l4-46H14z"/>
+                        <path d="M10 10h44" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+                        <rect x="26" y="2" width="12" height="8" rx="2"/>
+                        <line x1="32" y1="22" x2="32" y2="42" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                        <circle cx="32" cy="30" r="2" fill="white"/>
+                        <circle cx="24" cy="28" r="1.5" fill="white"/>
+                        <circle cx="40" cy="34" r="1.5" fill="white"/>
+                    </svg>
+                    <span class="cat-label">Cold Coffee</span>
+                </a>
+
+                <!-- Cup Coffee (Takeaway) -->
+                <a href="#coffee-menu" class="category-item">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                        <path d="M16 16 l4 36a4 4 0 004 4h16a4 4 0 004-4l4-36H16z"/>
+                        <path d="M12 10h40a2 2 0 012 2v4H10v-4a2 2 0 012-2z"/>
+                        <ellipse cx="32" cy="10" rx="12" ry="4"/>
+                        <path d="M26 28 a6 6 0 0012 0" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <circle cx="32" cy="22" r="2" fill="white"/>
+                    </svg>
+                    <span class="cat-label">Cup Coffee</span>
+                </a>
+
+                <!-- Dessert -->
+                <a href="#desserts" class="category-item">
+                    <svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+                        <rect x="8" y="34" width="48" height="22" rx="4"/>
+                        <path d="M8 34 C8 20 24 14 32 14 C40 14 56 20 56 34H8z"/>
+                        <path d="M32 14 C32 14 30 6 24 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        <circle cx="22" cy="3" r="3"/>
+                        <rect x="14" y="40" width="8" height="10" rx="2" fill="white" opacity="0.3"/>
+                        <rect x="28" y="40" width="8" height="10" rx="2" fill="white" opacity="0.3"/>
+                        <rect x="42" y="40" width="8" height="10" rx="2" fill="white" opacity="0.3"/>
+                    </svg>
+                    <span class="cat-label">Dessert</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 5. SPECIAL COFFEE MENU -->
+        <section id="coffee-menu">
+            <div class="menu-header">
+                <h2 class="section-title">OUR SPECIAL COFFEE</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous items">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                
+                <div class="carousel-track-wrapper" id="coffee-track-wrapper">
+                    <div class="carousel-track" id="coffee-track">
+                        <!-- Product Card 1 (Bestseller) -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <span class="bestseller-badge">⭐ Bestseller</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Lungo Coffee.jpg" alt="Lungo Coffee" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Lungo Coffee</h3>
+                                <p class="product-desc">Bold espresso pulled long for a smooth, rich taste</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.200</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Dalgona Coffee.jpg" alt="Dalgona Coffee" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Dalgona Coffee</h3>
+                                <p class="product-desc">Whipped instant coffee layered over chilled milk</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.500</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Iced Coffee.jpg" alt="Iced Coffee" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Iced Coffee</h3>
+                                <p class="product-desc">Chilled cold brew served over ice with cream</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.400</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 4 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Filter Coffee.jpg" alt="Filter Coffee" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Filter Coffee</h3>
+                                <p class="product-desc">Traditional South Indian drip brew, 70% coffee 30% chicory</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 0.800</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 5 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Flat White.jpg" alt="Flat White" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Flat White</h3>
+                                <p class="product-desc">Velvety microfoam espresso, stronger than a latte</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.800</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 6 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Caramel Macchiato.jpg" alt="Caramel Macchiato" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Caramel Macchiato</h3>
+                                <p class="product-desc">Vanilla syrup, steamed milk, espresso, caramel drizzle</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 2.200</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" aria-label="Next items" id="coffee-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- 6. SPECIAL DESSERTS MENU -->
+        <section id="desserts">
+            <div class="menu-header">
+                <h2 class="section-title">OUR SPECIAL DESSERT</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous items">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                
+                <div class="carousel-track-wrapper" id="dessert-track-wrapper">
+                    <div class="carousel-track" id="dessert-track">
+                        <!-- Card 1 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Gulab Jamun.jpg" alt="Gulab Jamun" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Gulab Jamun</h3>
+                                <p class="product-desc">Milk solids, sugar, rose water & cardamom in sugar syrup</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.500</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 (Bestseller) -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <span class="bestseller-badge">⭐ Bestseller</span>
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Chocolate Tiramisu.jpg" alt="Chocolate Tiramisu" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Chocolate Tiramisu</h3>
+                                <p class="product-desc">Mascarpone cream, cocoa, espresso-soaked ladyfingers</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 2.500</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Churros.jpg" alt="Churros" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Churros</h3>
+                                <p class="product-desc">Crispy fried dough with bittersweet chocolate dipping sauce</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.800</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Lamingtons.jpg" alt="Australian Lamingtons" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Lamingtons</h3>
+                                <p class="product-desc">Sponge cake dipped in chocolate, rolled in coconut flakes</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 2.800</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Crème Brûlée.jpg" alt="Crème Brûlée" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Crème Brûlée</h3>
+                                <p class="product-desc">Vanilla custard with caramelized sugar crust, served warm</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 2.000</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="product-card">
+                            <div class="card-img-wrapper">
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                </button>
+                                <img src="./images/High Quality Beans/Mango Kulfi.jpg" alt="Mango Kulfi" class="card-img" loading="lazy" width="400" height="200">
+                            </div>
+                            <div class="card-content">
+                                <h3 class="product-name">Mango Kulfi</h3>
+                                <p class="product-desc">Creamy frozen Indian dessert with real mango and saffron</p>
+                                <div class="price-row">
+                                    <span class="product-price">BD 1.200</span>
+                                    <button class="btn-order-small">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" aria-label="Next items">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- 7. PROMOTIONAL BANNER -->
+        <section id="promo-banner">
+            <img src="./images/img2/ChatGPT Image Mar 30, 2026, 03_30_28 AM.png" alt="" class="promo-bean promo-bean-left" loading="lazy" aria-hidden="true">
+            <img src="./images/img2/ChatGPT Image Mar 30, 2026, 12_39_17 PM.png" alt="" class="promo-bean promo-bean-right" loading="lazy" aria-hidden="true">
+            
+            <div class="promo-content">
+                <h2 class="promo-heading">Check Out Our Best Coffee Beans</h2>
+                <a href="#coffee-menu" class="btn-primary promo-btn">Explore Our Products &rarr;</a>
+            </div>
+        </section>
+
+        <!-- 8. TESTIMONIALS SECTION -->
+        <section id="testimonials">
+            <div class="menu-header">
+                <span class="testimonials-label">Come and join</span>
+                <h2 class="section-title">OUR HAPPY CUSTOMERS</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="testimonials-wrapper" id="testimonials-wrapper">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="Jane Adams" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                            <div class="testimonial-author">
+                                <h4 class="author-name">Jane Adams</h4>
+                                <span class="author-role">Freelancer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"I stopped by for a cappuccino and honestly had zero expectations. After 30 days here, not only did they not disappoint — I'd be just as satisfied every single time. Perfectly normal prices, quality I'd recommend."</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="Sam Williams" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                            <div class="testimonial-author">
+                                <h4 class="author-name">Sam Williams</h4>
+                                <span class="author-role">Entrepreneur</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"I've been ordering beans from Brewed & Co. for over a year now. The consistency is exceptional. The care that goes into every roast is obvious the moment you open the bag."</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="Angela Gonzales" class="testimonial-avatar" loading="lazy" width="48" height="48">
+                            <div class="testimonial-author">
+                                <h4 class="author-name">Angela Gonzales</h4>
+                                <span class="author-role">Manager</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <p class="testimonial-text">"What sets Brewed & Co. apart is the service. Every visit feels personal. And the coffee? It's the kind of cup that makes you rethink every other café you've visited."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-dots">
+                <button class="dot active" aria-label="Go to slide 1"></button>
+                <button class="dot" aria-label="Go to slide 2"></button>
+                <button class="dot" aria-label="Go to slide 3"></button>
+            </div>
+        </section>
+
+        <!-- 9. EMAIL NEWSLETTER SECTION -->
+        <section id="newsletter">
+            <img src="./images/img2/14.png" alt="" class="news-bean news-bean-left" loading="lazy" aria-hidden="true">
+            <img src="./images/img2/14 copy.png" alt="" class="news-bean news-bean-right" loading="lazy" aria-hidden="true">
+            
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Join In and Get 15% Off!</h2>
+                <p class="newsletter-subtext">Subscribe to our newsletter and receive your 15% discount code instantly.</p>
+                
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email address" required>
+                    <button type="submit" class="newsletter-submit">Subscribe</button>
+                </form>
+                
+                <p id="newsletter-success" class="newsletter-success hidden">✅ You're in! Check your inbox for the discount code.</p>
+            </div>
+        </section>
+
+        <!-- 10. FOOTER -->
+        <footer id="footer">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col brand-col">
+                    <h2 class="footer-logo">Brewed & Co.</h2>
+                    <p class="footer-desc">Crafting exceptional coffee experiences since 2018. Ethically sourced, expertly roasted.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">PRIVACY</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">SERVICES</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Order Ahead</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">ABOUT US</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Find a Location</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">INFORMATION</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Sell Your Products</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brewed & Co. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
