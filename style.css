@@ -552,6 +552,7 @@ section {
     flex-wrap: wrap;
     gap: var(--space-6);
     justify-content: center;
+    margin-top: var(--space-8);
 }
 
 @media (min-width: 768px) {
@@ -563,8 +564,6 @@ section {
 .hero-btn {
     padding: 14px 36px;
     font-size: var(--text-md);
-    margin-top: var(--space-8);
-    /* PRD margin-top 32px */
 }
 
 .hero-link {
@@ -1427,4 +1426,83 @@ section {
         gap: var(--space-6);
         /* 24px desktop gutter */
     }
+}
+
+/* ── COOKIE BANNER ── */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding: var(--space-4) var(--space-6);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+    border-top: 1px solid var(--color-border);
+    transform: translateY(100%);
+    transition: transform var(--transition-smooth);
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-banner.visible {
+    transform: translateY(0);
+}
+
+.cookie-banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media(min-width: 768px) {
+    .cookie-banner-content {
+        flex-direction: row;
+    }
+}
+
+.cookie-banner-content p {
+    font-size: var(--text-md);
+    color: var(--color-text-white);
+    margin: 0;
+    font-family: var(--font-body);
+    text-align: center;
+}
+
+.cookie-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    width: 100%;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .cookie-actions {
+        width: auto;
+    }
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--color-text-white);
+    border: 2px solid var(--color-text-white);
+    border-radius: var(--radius-pill);
+    padding: 10px 22px;
+    font-size: var(--text-md);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }

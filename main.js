@@ -368,4 +368,32 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 2000);
         });
     });
+    // ── COOKIE BANNER ──
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+    const declineCookiesBtn = document.getElementById('decline-cookies');
+
+    if (cookieBanner) {
+        if (!localStorage.getItem('cookieConsent')) {
+            setTimeout(() => {
+                cookieBanner.classList.add('visible');
+            }, 1000);
+        }
+
+        const closeBanner = (choice) => {
+            localStorage.setItem('cookieConsent', choice);
+            cookieBanner.classList.remove('visible');
+            setTimeout(() => {
+                cookieBanner.style.display = 'none';
+            }, 400);
+        };
+
+        if (acceptCookiesBtn) {
+            acceptCookiesBtn.addEventListener('click', () => closeBanner('accepted'));
+        }
+        
+        if (declineCookiesBtn) {
+            declineCookiesBtn.addEventListener('click', () => closeBanner('declined'));
+        }
+    }
 });

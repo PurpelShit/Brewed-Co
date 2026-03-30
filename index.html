@@ -31,11 +31,12 @@
             <div class="nav-container">
                 <a href="#" class="nav-logo text-nowrap">Brewed &amp; Co.</a>
                 
-                <nav class="nav-links desktop-only">
+                <div class="nav-actions" style="margin-left: auto;">
+                    <a href="#coffee-menu" class="btn-primary desktop-only">Order Now</a>
                     <div class="nav-dropdown">
                         <button class="nav-more-btn" aria-label="More options">
                             More 
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                         </button>
                         <div class="nav-dropdown-content">
                             <a href="#hero">HOME</a>
@@ -46,33 +47,7 @@
                             <a href="#hero">LOGIN</a>
                         </div>
                     </div>
-                </nav>
-
-                <div class="nav-actions">
-                    <button class="search-btn" aria-label="Search">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    </button>
-                    <a href="#coffee-menu" class="btn-primary desktop-only">Order Now</a>
-                    <button class="mobile-menu-toggle mobile-only" aria-label="Toggle menu">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                    </button>
                 </div>
-            </div>
-            
-            <!-- Mobile Menu Overlay -->
-            <div class="mobile-menu-overlay">
-                <button class="mobile-menu-close" aria-label="Close menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                </button>
-                <nav class="mobile-nav-links">
-                    <a href="#hero">HOME</a>
-                    <a href="#coffee-menu">COFFEE</a>
-                    <a href="#desserts">BAKERY</a>
-                    <a href="#promo-banner">SHOP</a>
-                    <a href="#footer">ABOUT</a>
-                    <a href="#hero">LOGIN</a>
-                    <a href="#coffee-menu" class="btn-primary mobile-order-btn">Order Now</a>
-                </nav>
             </div>
         </header>
 
@@ -587,6 +562,17 @@
     </div>
 
     <!-- GSAP & Plugins -->
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <p>We use cookies to improve your experience.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn-primary">Accept</button>
+                <button id="decline-cookies" class="btn-outline">Decline</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- Lenis Smooth Scroll -->
